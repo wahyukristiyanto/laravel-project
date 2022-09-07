@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Env;
 use Tests\TestCase;
 
 class EnvironmentTest extends TestCase
@@ -13,5 +14,12 @@ class EnvironmentTest extends TestCase
         $youtube = env("Youtube");
 
         self::assertEquals("Laravel Project", $youtube);
+    }
+
+    public function testDefaultEnv()
+    {
+        $author = Env::get("AUTHOR", "Navy");
+
+        self::assertEquals("Navy", $author);
     }
 }
