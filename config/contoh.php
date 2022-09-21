@@ -1,7 +1,7 @@
 <?php
 
 return [
-    "name" => [
+    "author" => [
         "first" => env('NAME_FIRST','Rian'),
         "last" => env('NAME_LAST','nvs')
     ],
