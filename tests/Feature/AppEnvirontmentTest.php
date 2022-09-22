@@ -9,7 +9,8 @@ use Tests\TestCase;
 
 class AppEnvirontmentTest extends TestCase
 {
-    public function testAppEnv(){
+    public function testAppEnv()
+    {
         if(App::environment(['testing','prod','dev'])){
             self::assertTrue(true);
         }

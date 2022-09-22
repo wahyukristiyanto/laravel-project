@@ -8,7 +8,8 @@ use Tests\TestCase;
 
 class testConfig extends TestCase
 {
-    public function testConfig(){
+    public function testConfig()
+    {
         $firstName = config('contoh.author.first');
         $lastName = config('contoh.author.last');
         $email = config('contoh.email');
